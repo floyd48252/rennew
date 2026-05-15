@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Industrial & Domestic Cleaning Solutions</title>
+    <meta name="description" content="Request an estimate or schedule service. Call 224-440-0570 or send a message. Serving all 50 states.">
+    <meta name="theme-color" content="#0b1220">
+    <meta name="robots" content="index,follow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+         :root {
+            --primary: #0b1220;
+            --secondary: #059669;
+            --accent: #ffffff;
+            --bg: #ffffff;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .shadow-soft {
+            box-shadow: 0 18px 45px rgba(2, 6, 23, .12);
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+        }
+        
+        img {
+            transition: transform 0.25s ease-in-out;
+            display: inline-block;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-950 font-sans">
+    <header class="bg-white/90 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a class="flex items-center gap-3" href="./index.html" aria-label="Industrial & Domestic Cleaning Solutions Home">
+                    <img src="./logo.jpeg" alt="Industrial & Domestic Cleaning Solutions logo" class="w-11 h-11 rounded-xl object-cover ring-1 ring-gray-200 bg-white">
+                    <div class="leading-tight">
+                        <p class="text-[11px] tracking-wide uppercase text-slate-500">Industrial & Domestic</p>
+                        <p class="text-lg md:text-xl font-extrabold text-slate-950">Cleaning Solutions</p>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="./services.html" class="text-slate-700 hover:text-green-700 font-medium">Services</a>
+                    <a href="./how-it-works.html" class="text-slate-700 hover:text-green-700 font-medium">How it works</a>
+                    <a href="./contact.html" class="text-green-700 font-semibold">Contact</a>
+                    <a href="./faq.html" class="text-slate-700 hover:text-green-700 font-medium">FAQ</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="tel:+12244400570" class="bg-blue-950 hover:bg-slate-900 text-white px-4 py-2 rounded-lg font-semibold text-sm">
+                        <i class="fa-solid fa-phone mr-2"></i>224-440-0570
+                    </a>
+                    <button type="button" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200" aria-label="Open menu" onclick="toggleMenu()">
+                        <i class="fa-solid fa-bars text-slate-900"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <div class="grid gap-2 pt-2">
+                    <a href="./services.html" class="px-3 py-2 rounded-lg hover:bg-white" onclick="toggleMenu(false)">Services</a>
+                    <a href="./how-it-works.html" class="px-3 py-2 rounded-lg hover:bg-white" onclick="toggleMenu(false)">How it works</a>
+                    <a href="./contact.html" class="px-3 py-2 rounded-lg bg-white" onclick="toggleMenu(false)">Contact</a>
+                    <a href="./faq.html" class="px-3 py-2 rounded-lg hover:bg-white" onclick="toggleMenu(false)">FAQ</a>
+                    <!-- Contact already selected -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden text-white" style="background: radial-gradient(900px 520px at 15% 10%, rgba(5,150,105,.28), transparent 55%), linear-gradient(180deg, #059669, #0b1220);">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 md:py-20">
+            <div class="max-w-3xl">
+                <p class="text-white/70 text-sm">Contact</p>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">Request an estimate or schedule service</h1>
+                <p class="text-base sm:text-lg text-white/75 mt-4">Call us anytime or send a message. For larger sites and certain services, we start with a walkthrough.</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Get in touch</h2>
+                    <p class="text-gray-300 mb-8">We’ll confirm scope, scheduling, and any walkthrough requirements before service.</p>
+                    <div class="space-y-4 text-lg">
+                        <p><i class="fa-solid fa-phone mr-3 text-green-400"></i> <a href="tel:+12244400570" class="hover:underline">224-440-0570</a></p>
+                        <p><i class="fa-solid fa-envelope mr-3 text-green-400"></i> <a href="mailto:info@industrialcommercialanddomesticcleaningsolutions.com" class="hover:underline">info@industrialcommercialanddomesticcleaningsolutions.com</a></p>
+                        <p><i class="fa-solid fa-location-dot mr-3 text-green-400"></i> Based in Virginia, USA</p>
+                        <p class="text-sm text-slate-300 mt-6">Licensing and documentation available upon request (varies by state/service).</p>
+                    </div>
+                </div>
+
+                <form id="contactForm" onsubmit="submitContactForm(event)" class="space-y-4 bg-white/5 border border-white/10 rounded-2xl p-4 sm:p-6 md:p-8" method="POST">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <input type="text" name="name" placeholder="Full Name" class="w-full p-3 rounded-lg text-slate-950" required>
+                        <input type="tel" name="phone" placeholder="Phone" class="w-full p-3 rounded-lg text-slate-950" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="emailPreference" class="block text-sm font-medium text-slate-700 mb-2">Preferred Contact Email</label>
+                        <select id="emailPreference" name="emailPreference" class="w-full p-3 rounded-lg text-slate-950">
+                            <option value="">Select department for response</option>
+                            <option value="info">General Inquiries - info@industrialcommercialanddomesticcleaningsolutions.com</option>
+                            <option value="customerservice">Customer Service - customerservice@industrialcommercialanddomesticcleaningsolutions.com</option>
+                            <option value="sales">Sales & Quotes - sales@industrialcommercialanddomesticcleaningsolutions.com</option>
+                            <option value="support">Technical Support - support@industrialcommercialanddomesticcleaningsolutions.com</option>
+                            <option value="accounting">Accounting & Billing - accounting@industrialcommercialanddomesticcleaningsolutions.com</option>
+                            <option value="admin">Administrator - admin@industrialcommercialanddomesticcleaningsolutions.com</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <select name="service" class="w-full p-3 rounded-lg text-slate-950" required>
+                            <option value="">Select Service Needed</option>
+                            <option>Cleaning - Residential</option>
+                            <option>Cleaning - Commercial/Industrial</option>
+                            <option>Fumigation</option>
+                            <option>Pest Control</option>
+                            <option>Allergen Control</option>
+                            <option>Emergency Service</option>
+                            <option>forensic crime scene cleaning</option>
+                        </select>
+                        <input type="text" name="location" placeholder="City, State" class="w-full p-3 rounded-lg text-slate-950">
+                    </div>
+                    <textarea name="message" placeholder="Tell us about the site (sq ft, frequency, issues, urgency)..." rows="5" class="w-full p-3 rounded-lg text-slate-950" required></textarea>
+                    <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-lg">
+                        Send message
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-950 text-slate-300 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <!-- Contact Emails -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+                <div class="bg-blue-900/50 p-3 rounded-lg">
+                    <p class="font-semibold text-white mb-2">General Inquiries</p>
+                    <a href="mailto:info@industrialcommercialanddomesticcleaningsolutions.com" class="text-blue-200 hover:text-white block">
+                        <i class="fa-solid fa-envelope mr-1"></i>info@industrialcommercialanddomesticcleaningsolutions.com
+                    </a>
+                </div>
+                <div class="bg-blue-900/50 p-3 rounded-lg">
+                    <p class="font-semibold text-white mb-2">Customer Support</p>
+                    <a href="mailto:customerservice@industrialcommercialanddomesticcleaningsolutions.com" class="text-blue-200 hover:text-white block">
+                        <i class="fa-solid fa-headset mr-1"></i>customerservice@industrialcommercialanddomesticcleaningsolutions.com
+                    </a>
+                </div>
+                <div class="bg-blue-900/50 p-3 rounded-lg">
+                    <p class="font-semibold text-white mb-2">Sales & Quotes</p>
+                    <a href="mailto:sales@industrialcommercialanddomesticcleaningsolutions.com" class="text-blue-200 hover:text-white block">
+                        <i class="fa-solid fa-chart-line mr-1"></i>sales@industrialcommercialanddomesticcleaningsolutions.com
+                    </a>
+                </div>
+                <div class="bg-blue-900/50 p-3 rounded-lg">
+                    <p class="font-semibold text-white mb-2">Technical Support</p>
+                    <a href="mailto:support@industrialcommercialanddomesticcleaningsolutions.com" class="text-blue-200 hover:text-white block">
+                        <i class="fa-solid fa-tools mr-1"></i>support@industrialcommercialanddomesticcleaningsolutions.com
+                    </a>
+                </div>
+                <div class="bg-blue-900/50 p-3 rounded-lg">
+                    <p class="font-semibold text-white mb-2">Accounting & Billing</p>
+                    <a href="mailto:accounting@industrialcommercialanddomesticcleaningsolutions.com" class="text-blue-200 hover:text-white block">
+                        <i class="fa-solid fa-calculator mr-1"></i>accounting@industrialcommercialanddomesticcleaningsolutions.com
+                    </a>
+                </div>
+                <div class="bg-blue-900/50 p-3 rounded-lg">
+                    <p class="font-semibold text-white mb-2">Administrator</p>
+                    <a href="mailto:admin@industrialcommercialanddomesticcleaningsolutions.com" class="text-blue-200 hover:text-white block">
+                        <i class="fa-solid fa-user-shield mr-1"></i>admin@industrialcommercialanddomesticcleaningsolutions.com
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright & Legal -->
+            <div class="mt-8 pt-6 border-t border-slate-700">
+                <div class="text-center text-xs text-slate-400">
+                    <p>&copy; 2026 Industrial and Domestic Cleaning Solutions. All rights reserved.</p>
+                    <p class="mt-2">Estimates are informational. Final pricing depends on scope, site conditions, and local requirements.</p>
+                    <div class="mt-4 space-x-4">
+                        <a href="#" class="hover:text-white">Privacy Policy</a>
+                        <a href="#" class="hover:text-white">Terms of Service</a>
+                        <a href="./contact.html" class="hover:text-white">Request documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Company Email Addresses for routing
+        const COMPANY_EMAILS = {
+            admin: 'admin@industrialcommercialanddomesticcleaningsolutions.com',
+            support: 'support@industrialcommercialanddomesticcleaningsolutions.com',
+            customerService: 'customerservice@industrialcommercialanddomesticcleaningsolutions.com',
+            info: 'info@industrialcommercialanddomesticcleaningsolutions.com',
+            sales: 'sales@industrialcommercialanddomesticcleaningsolutions.com',
+            accounting: 'accounting@industrialcommercialanddomesticcleaningsolutions.com'
+        };
+
+        function toggleMenu(force) {
+            const el = document.getElementById('mobileMenu');
+            const shouldShow = typeof force === 'boolean' ? force : el.classList.contains('hidden');
+            if (shouldShow) el.classList.remove('hidden');
+            else el.classList.add('hidden');
+        }
+
+        // Submit contact form
+        async function submitContactForm(event) {
+            event.preventDefault();
+            
+            const formData = {
+                name: document.querySelector('input[name="name"]').value,
+                phone: document.querySelector('input[name="phone"]').value,
+                service: document.querySelector('select[name="service"]').value,
+                location: document.querySelector('input[name="location"]').value,
+                message: document.querySelector('textarea[name="message"]').value,
+                emailPreference: document.querySelector('select[name="emailPreference"]').value
+            };
+
+            // Validate required fields
+            if (!formData.name || !formData.phone || !formData.service || !formData.message) {
+                alert('Please fill in all required fields (Name, Phone, Service, and Message).');
+                return;
+            }
+
+            // Get selected email preference
+            const selectedEmail = COMPANY_EMAILS[formData.emailPreference] || COMPANY_EMAILS.info;
+            
+            // Create email content with routing information
+            const emailContent = `
+                New Contact Form Submission
+                
+                Contact Information:
+                Name: ${formData.name}
+                Phone: ${formData.phone}
+                Email: ${selectedEmail}
+                
+                Service Request:
+                Service Type: ${formData.service}
+                Location: ${formData.location}
+                Message: ${formData.message}
+                
+                Email Preference: ${formData.emailPreference}
+                Requested Response Email: ${selectedEmail}
+                
+                All Available Contacts:
+                Customer Service: customerservice@industrialcommercialanddomesticcleaningsolutions.com
+                Technical Support: support@industrialcommercialanddomesticcleaningsolutions.com
+                Sales & Quotes: sales@industrialcommercialanddomesticcleaningsolutions.com
+                Accounting & Billing: accounting@industrialcommercialanddomesticcleaningsolutions.com
+                Administrator: admin@industrialcommercialanddomesticcleaningsolutions.com
+            `;
+
+            // Send email to backend
+            try {
+                // Show loading state
+                const submitBtn = document.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                const response = await fetch('http://localhost:8080/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Show success message
+                    alert(`Thank you for your inquiry! Your request has been sent to ${result.email}. We will contact you within 24 hours.`);
+                    
+                    // Clear form
+                    document.getElementById('contactForm').reset();
+                } else {
+                    // Show specific error message
+                    alert(result.message || 'Error submitting contact form. Please try again.');
+                }
+            } catch (error) {
+                console.error('Contact form submission error:', error);
+                alert('Network error. Please check your connection and try again.');
+            } finally {
+                // Reset button state
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
